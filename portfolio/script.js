@@ -15,6 +15,35 @@ $(document).ready(function(){
         }
     });
 
+
+
+    document.getElementById("downloadButton").addEventListener("click", function() {
+        // Replace 'Shrey_Yadav_CV.pdf' with the actual filename or path of your resume
+        const resumeUrl = 'https://drive.google.com/file/d/1vO_P0eaozuGxUf3MoqlG691Y3jMM9ux1/view?usp=sharing';
+    
+        // Create a link element
+        const link = document.createElement('a');
+    
+        // Set the download attribute with the filename
+        link.download = 'Shrey_Yadav_CV.pdf';
+    
+        // Set the href attribute to the resume file's URL
+        link.href = resumeUrl;
+    
+        // Append the link to the document
+        document.body.appendChild(link);
+    
+        // Trigger a click on the link to start the download
+        link.click();
+    
+        // Remove the link from the document
+        document.body.removeChild(link);
+    });
+    
+    
+    
+    
+
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
