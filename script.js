@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     document.getElementById("downloadButton").addEventListener("click", function() {
         // Replace 'Shrey_Yadav_CV.pdf' with the actual filename or path of your resume
-        const resumeUrl = 'https://drive.google.com/file/d/1vO_P0eaozuGxUf3MoqlG691Y3jMM9ux1/view?usp=sharing';
+        const resumeUrl = 'https://drive.google.com/file/d/1L-_wr_GaUVFGS913K2gRM7_GyXSN8wG7/view?usp=sharing';
     
         // Create a link element
         const link = document.createElement('a');
